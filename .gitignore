@@ -1,5 +1,5 @@
 .DS_Store
-
+coba.txt
 #application/cache/*
 !application/cache/index.html
 
