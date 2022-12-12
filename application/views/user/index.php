@@ -32,47 +32,6 @@
         </div>
     </div>
 </section>
-<section class="section-padding">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-10 col-12 text-center mx-auto">
-                <h2 class="mb-5">Nomor Yang Di Proses</h2>
-            </div>
-
-           <div class="col-12">
-                <div class="featured-block d-flex justify-content-center align-items-center">
-                    <?php if($no_proses){ ?>
-                        <p class="featured-block-text" style="font-size: 100px"><strong><?= $no_proses ?></strong></p>
-                    <?php }else{ ?>
-                        <p class="featured-block-text"><strong>Belum ada nomor antran yang do proses</strong></p>
-                   <?php } ?>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<section class="section-padding">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-10 col-12 text-center mx-auto">
-                <h2 class="mb-5">Total Antrian Hari Ini</h2>
-            </div>
-
-            <div class="col-12">
-                <div class="featured-block d-flex justify-content-center align-items-center">
-                    <p class="featured-block-text" style="font-size: 100px"><strong><?= $total_antrian ?></strong></p>
-                   
-                </div>
-            </div>
-
-            
-        </div>
-    </div>
-</section>
 
 <section class="cta-section section-padding section-bg">
     <div class="container">
