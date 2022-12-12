@@ -1,10 +1,11 @@
 .DS_Store
-coba.txt
+
 #application/cache/*
 !application/cache/index.html
 
 application/logs/*
 application/config/config.php
+application/config/database.php
 !application/logs/index.html
 
 !application/*/.htaccess
