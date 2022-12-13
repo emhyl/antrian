@@ -58,8 +58,8 @@ class Proses extends CI_Controller {
 			$this->M_capil->add('tbl_berkas',$data);
 
 		}else{
-			redirect(base_url('nomor_antrian'));
 		}
+			redirect(base_url('nomor_antrian'));
 
 	}
 	

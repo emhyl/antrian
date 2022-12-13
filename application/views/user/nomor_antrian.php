@@ -90,7 +90,7 @@
 
                     <div class="col-12">
                         <div class="alert alert-warning" role="alert">
-                         Sesi pendaftaran berakhir silahkan mendaftar kembali besok di jam 08:00 - 09:00
+                         Sesi pendaftaran berakhir silahkan mendaftar kembali besok di jam 08:00 - 10:00
                         </div>
 
                     </div>

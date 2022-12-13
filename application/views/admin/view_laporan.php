@@ -24,7 +24,7 @@
 	</style>
 </head>
 <body>
-	<h1>Laporan total hasil orderan</h1>
+	<h1>Laporan total antrian hari ini</h1>
 
 	<hr>
 	<div id="box-tbl">
@@ -32,8 +32,8 @@
 			<tr>
 				<th>Nama</th>
 				<th>Alamat</th>
-				<th>No telpon</th>
-				<th>Jenis Perawatan</th>
+				<th>No Telepon</th>
+				<th>Jenis Pengurusan</th>
 				<th>Tanggal</th>
 			</tr>
 			<?php foreach($laporan as $row){ ?>

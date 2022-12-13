@@ -126,18 +126,18 @@ https://templatemo.com/tm-581-kind-heart-charity
                     <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?= base_url('assets/user/') ?>images/slide/header_1.png"
+                                <img src="<?= base_url('assets/user/') ?>images/slide/header_2.png"
                                     class="carousel-image img-fluid" alt="...">
 
                             </div>
                             <div class="carousel-item">
-                                <img src="<?= base_url('assets/user/') ?>images/slide/header_1.png"
+                                <img src="<?= base_url('assets/user/') ?>images/slide/header_2.png"
                                     class="carousel-image img-fluid" alt="...">
 
                                 
                             </div>
                             <div class="carousel-item">
-                                <img src="<?= base_url('assets/user/') ?>images/slide/header_1.png"
+                                <img src="<?= base_url('assets/user/') ?>images/slide/header_2.png"
                                     class="carousel-image img-fluid" alt="...">
 
                             <!--     <div class="carousel-caption d-flex flex-column justify-content-end">

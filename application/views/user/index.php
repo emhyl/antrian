@@ -33,6 +33,7 @@
     </div>
 </section>
 
+
 <section class="cta-section section-padding section-bg">
     <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -44,7 +45,7 @@
                   <thead>
                     <tr>
                       <th scope="col">NO</th>
-                      <th scope="col">Jenis Pengurursan</th>
+                      <th scope="col">Jenis Pengurusan</th>
                       <th scope="col">Blangko</th>
                       <th scope="col">Tanggal</th>
                     </tr>
