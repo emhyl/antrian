@@ -7,9 +7,16 @@ class Home extends CI_Controller {
 		if(!$this->session->userdata('admin')){
 			redirect(base_url('login'));
 		}
-		// var_dump($this->CForm->time_now(true));
+		// var_dump($this->CForm->time_now(true));die();
 		
-		if($this->CForm->time_now(true) >= 17){
+		$jam['jam_buka'] = $this->M_capil->getWhere('jam',['id'=>1])->buka;
+		$jam['jam_tutup'] = $this->M_capil->getWhere('jam',['id'=>1])->tutup;
+		$jam['sesi_buka'] = $this->M_capil->getWhere('jam',['id'=>1])->sesi_buka;
+		$jam['sesi_tutup'] = $this->M_capil->getWhere('jam',['id'=>1])->sesi_tutup;
+		$jam['set_buka'] = $this->M_capil->getWhere('jam',['id'=>1])->set_buka;
+		$jam['set_tutup'] = $this->M_capil->getWhere('jam',['id'=>1])->set_tutup;
+
+		if($this->CForm->time_now(true) >= $jam['jam_tutup']){
 			$data_berkas = $this->CForm->ascToNum($this->M_capil->getAllWhere('tbl_berkas',['tgl'=>$this->CForm->time_now()]),'id');
 			$data_antrian = $this->CForm->ascToNum($this->M_capil->getAll('tbl_antrian'),'id');
 			$data_pemohon = $this->CForm->ascToNum($this->M_capil->getAll('tbl_pemohon'),'id');
@@ -27,7 +34,7 @@ class Home extends CI_Controller {
 			}
 		}
 
-		if($this->CForm->time_now(true) >= 8 && $this->CForm->time_now(true) <= 16){
+		if($this->CForm->time_now(true) >= $jam['set_buka'] && $this->CForm->time_now(true) <= $jam['set_tutup']){
 			$data_berkas_riwayat = $this->CForm->ascToNum($this->M_capil->getAllWhere('tbl_berkas',['status'=>'selesai']),'id');
 			foreach ($data_berkas_riwayat as $row_berkas_riwayat) {
 				$this->M_capil->delete('tbl_berkas',['id'=>$row_berkas_riwayat]);

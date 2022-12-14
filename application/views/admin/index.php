@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="<?= base_url('admin/home/pemohon') ?>">
+                    <a href="<?= base_url('admin/data_master/data_pemohon') ?>">
                         <div class="panel-footer">
                             <span class="pull-left">Lihat Detail</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="<?= base_url('admin/home/antrian') ?>">
+                    <a href="<?= base_url('admin/data_master/data_antrian') ?>">
                         <div class="panel-footer">
                             <span class="pull-left">Lihat Detail</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="<?= base_url('admin/home/antrian')?>">
+                    <a href="<?= base_url('admin/data_master/data_antrian')?>">
                         <div class="panel-footer">
                             <span class="pull-left">Lihat Detail</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

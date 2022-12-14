@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Startmin - Bootstrap Admin Theme</title>
+        <title>Login</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="<?= base_url('assets/admin/') ?>css/bootstrap.min.css" rel="stylesheet">

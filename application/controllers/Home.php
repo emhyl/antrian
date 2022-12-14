@@ -95,14 +95,18 @@ class Home extends CI_Controller {
 		}
 
 // =======================bagian jam pendaftaran=============================
+		$jam['jam_buka'] = $this->M_capil->getWhere('jam',['id'=>1])->buka;
+		$jam['jam_tutup'] = $this->M_capil->getWhere('jam',['id'=>1])->tutup;
+		$jam['sesi_buka'] = $this->M_capil->getWhere('jam',['id'=>1])->sesi_buka;
+		$jam['sesi_tutup'] = $this->M_capil->getWhere('jam',['id'=>1])->sesi_tutup;
 
-		if($this->CForm->time_now(true) >= 8 && $this->CForm->time_now(true) <=16 ){
+		if($this->CForm->time_now(true) >= $jam['sesi_buka'] && $this->CForm->time_now(true) <=$jam['sesi_tutup'] ){
 			$data['sesi_daftar'] = true;
 		}else{
 			$data['sesi_daftar'] = false;
 		}
 
-		if($this->CForm->time_now(true) >= 8 && $this->CForm->time_now(true) < 16 ){
+		if($this->CForm->time_now(true) >= $jam['jam_buka'] && $this->CForm->time_now(true) < $jam['jam_tutup'] ){
 			$data['jam_buka'] = true;
 		}else{
 			$data['jam_buka'] = false;

@@ -76,6 +76,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                     
+                            <li><a href="<?= base_url('admin/setting') ?>"><i class="fa fa-cog fa-fw"></i> Setting</a>
                             <li class="divider"></li>
                             <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
