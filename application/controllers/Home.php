@@ -53,7 +53,6 @@ class Home extends CI_Controller {
 					$data['jenis_url'] = 'ktp';
 					# code...
 					break;
-				
 				case 'kartu_keluarga':
 					$data['jenis_pengurusan'] = 'KARTU KELUARGA';
 					$data['ikon'] = 'kk.png';
